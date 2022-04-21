@@ -1,0 +1,82 @@
+h1{
+	font-family: sans-serif;
+}
+
+#ring1{
+  left: 30vw;
+  height: 40vw;
+  width: 40vw;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  opacity: 33.3333333333%;
+  animation: color1 1s infinite linear;
+  animation-play-state: paused;
+}
+#ring2{
+  left: 30vw;
+  height: 40vw;
+  width: 40vw;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  opacity: 33.333333333%;
+  animation: color2 .5s infinite linear;
+  animation-play-state: paused;
+}
+
+#ring3{
+  left: 30vw;
+  height: 40vw;
+  width: 40vw;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  opacity: 33.333333333%;
+  animation: color3 .8s infinite linear;
+  animation-play-state: paused;
+}
+
+
+#btn{
+  border: none;
+  margin-top: 10%;
+  left: 40vw;
+  height: 20vw;
+  width: 20vw;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  box-shadow: 0 0 40px 50px rgb(255, 255, 255);
+  font-size: 1vw;
+}
+
+#colors{
+	left: 4vw;
+	position: absolute;
+	width: 12vw;
+
+}
+
+@keyframes color3{
+	0%{background-color: rgb(0, 0, 0);}
+	50%{background-color: rgb(255, 0, 0);}
+	100%{background-color: rgb(0, 0, 0);}
+}
+
+@keyframes color2{
+	0%{background-color: rgb(0, 0, 0);}
+	50%{background-color: rgb(0, 255, 0);}
+	100%{background-color: rgb(0, 0, 0);}
+}
+
+@keyframes color1{
+	0%{background-color: rgb(0, 0, 0);}
+	50%{background-color: rgb(0, 0, 255);}
+	100%{background-color: rgb(0, 0, 0);}
+}

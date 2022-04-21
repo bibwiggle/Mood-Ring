@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Title of the document</title>
+</head>
+<body>	
+<div style = "text-align:center">
+  <h1>Mood Ring</h1>
+  <span id ="ring1"></span>
+  <span id ="ring2"></span>
+  <span id ="ring3"></span>
+  <input type="button" value="Click and Hold" id="btn"></input>
+  <img src="color meaning.png" id="colors">
+</div>
+
+  <script>
+    
+    var btn=document.getElementById('btn');
+    var ring1=document.getElementById('ring1');
+    var ring2=document.getElementById('ring2');
+    var ring3=document.getElementById('ring3');
+    btn.addEventListener('mousedown', function(){
+      if (btn.value=="Click and Hold") btn.value = "Let go whenever";
+    else btn.value = "Click and Hold";
+    })
+    btn.addEventListener('mouseup', function(){
+    if (btn.value=="Let go whenever") btn.value = "Click and Hold";
+    else btn.value = "Let go whenever";
+    })
+
+    btn.addEventListener('mousedown', function() {
+          const paused = ring3.style.animationPlayState || 'paused';
+          ring3.style.animationPlayState = paused === 'paused' ? 'running' : 'paused';
+});
+    btn.addEventListener('mouseup', function() {
+          const paused = ring3.style.animationPlayState || 'paused';
+          ring3.style.animationPlayState = paused === 'paused' ? 'running' : 'paused';
+});
+    btn.addEventListener('mousedown', function() {
+          const paused = ring2.style.animationPlayState || 'paused';
+          ring2.style.animationPlayState = paused === 'paused' ? 'running' : 'paused';
+});
+    btn.addEventListener('mouseup', function() {
+          const paused = ring2.style.animationPlayState || 'paused';
+          ring2.style.animationPlayState = paused === 'paused' ? 'running' : 'paused';
+});
+    btn.addEventListener('mousedown', function() {
+          const paused = ring1.style.animationPlayState || 'paused';
+          ring1.style.animationPlayState = paused === 'paused' ? 'running' : 'paused';
+});
+    btn.addEventListener('mouseup', function() {
+          const paused = ring1.style.animationPlayState || 'paused';
+          ring1.style.animationPlayState = paused === 'paused' ? 'running' : 'paused';
+});
+        
+  
+</script>
+</body>
+
+</html>
